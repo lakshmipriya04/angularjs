@@ -1,0 +1,18 @@
+<html lang="en">  
+<head>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>  
+</head>  
+<body ng-app="myapp">  
+<!-- view part -->
+<div ng-controller="HelloController" >  
+<h2>Hello {{name}} !</h2>  
+</div>  
+<!-- controller part -->
+<script>  
+angular.module("myapp", [])
+.controller("HelloController", function($scope) {  
+    $scope.name = "priya";  
+});  
+</script>  
+</body>  
+</html>   

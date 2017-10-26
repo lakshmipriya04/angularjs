@@ -1,0 +1,14 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>  
+
+    <body>
+    <div ng-app="" ng-init="firstName='Lakshmi'; lastName='Priya'">
+       <h1> string without bind</h1>
+        <p>My name is: {{ firstName + lastName }} </p>
+       <h1> string with bind</h1>
+        <div>My name is : 
+            <h2 ng-bind="firstName + lastName"></h2>
+        </div>
+    </div>   
+    </body>
+</html>

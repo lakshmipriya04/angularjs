@@ -1,0 +1,17 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>  
+
+    <body>
+    <div ng-app="" ng-init="
+                            even=[2,4,6,8]
+                            ">
+       <h1> objects without bind</h1>
+        <p> all even numbers : {{ even }} </p>
+        <p> first even number : {{ even[0] }} </p>
+        
+       <h1> objects with bind</h1>
+         <p> all even numbers : <span ng-bind=" even "></span>  </p>
+        <p>  first even number : <span ng-bind=" even[0] "></span>  </p>
+    </div>   
+    </body>
+</html>

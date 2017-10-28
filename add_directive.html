@@ -1,0 +1,16 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>  
+
+    <body>
+    <div ng-app="myApp" my-directive>
+    </div> 
+    <script>
+        var app= angular.module("myApp",[]);
+        app.directive("myDirective", function() { /* my-directive = myDirective */
+            return {
+                template : "hey this is my directive"
+            };
+        });
+    </script>
+    </body>
+</html>
